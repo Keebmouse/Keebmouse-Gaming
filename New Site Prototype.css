@@ -1,0 +1,81 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+.pageTitle p{
+    top: 0;
+    color: gold;
+    text-align: center;
+    font-size: 36px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-image: url("./Crystal Mouse.png");
+    text-shadow: 
+    -1px -1px 0 black,
+    1px -1px 0 black,
+    -1px  1px 0 black,
+    1px  1px 0 black;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    position: fixed;
+    width: 100%;
+}
+
+.navigationMenu{
+    padding: 0%;
+}
+.navigationMenu ul{
+    top: 72px;
+    list-style-type: none;
+    font-size: 36px;
+    margin-top:  0%;
+    margin-left: 10%;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    background-color: #333;
+}
+
+.navigationMenu li{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:blueviolet;
+    margin: 1%;
+}
+.navigationMenu li:hover{
+    font-size: 36;
+    color:rgb(241, 0, 0);
+}
+.blogPost{
+    margin-top: 10%;
+    background-color: #f2fab7;
+}
+.blogPost p{
+    word-wrap: normal;
+    margin-left: 15%;
+    margin-right: 25%;
+}
+.blogSidebar{
+    top: 10%;
+    padding: 5px;
+    word-wrap: normal;
+    background-color: blue;
+    position: fixed;
+    width: 10%;
+    height: 100%;
+    box-shadow: none;
+}
+.blogSidebar ul{
+    list-style-type: none;
+    padding: 5px;
+    margin: 5px;
+}
+
+.blogSidebar li{
+    list-style-type: none;
+    padding: 5px;
+    margin: 5px;
+}
