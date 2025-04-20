@@ -1,0 +1,218 @@
+* {
+    word-wrap: break-word;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+}
+
+/* Title Banner */
+.titlebanner {
+    z-index: 1;
+    min-height: 5vh;
+    max-height: 10vh;
+    position: fixed;
+}
+.titlebanner p {
+    position:fixed;
+    background: linear-gradient(180deg, purple, black);
+    color: green;
+    text-shadow:
+        -2px -2px 0 #000,
+         2px -2px 0 #000,
+        -2px  2px 0 #000,
+         2px  2px 0 #000;
+    width: 100%;
+    height: 10vh;
+    font-size: clamp(24px, 5vw, 48px);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+}
+.sitenav{
+    width: 100%;
+    position: fixed;
+    left: 200px;
+    z-index: 1;
+}
+.sitenav ul{
+    list-style: none;
+    margin-top: 10vh;
+    display: inline-flex;
+    background-color: black;
+    color: green;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.sitenav li{
+    font-size: 24px;
+    padding: 0px 10px;
+}
+.sitenav li:hover{
+    font-size: 24px;
+    padding: 0px 10px;
+    color: gold;
+}
+/* Main Layout */
+.main-container {
+    display: flex;
+    min-height: calc(100vh - 72px); /* Adjust for titlebanner height */
+}
+
+/* Blog Sidebar */
+.blogsidebar {
+    position: fixed;
+    margin-top: 10vh;
+    height: 100%;
+    word-wrap: normal;
+    width: 200px;
+    background-image: url("./kmdc side.png");
+    /*background: linear-gradient(180deg, black, purple);*/
+    padding: 20px;
+    color: white;
+}
+.blogsidebar p {
+    font-family: Impact;
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 15px;
+    color: green;
+    text-shadow: 
+    -2px -2px 0 white,
+    2px -2px 0 white,
+   -2px  2px 0 white,
+    2px  2px 0 white;
+}
+.blogsidebar ul {
+    list-style: none;
+}
+.blogsidebar li {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+.blogsidebar li a {
+    z-index: 2;
+    color: white;
+    text-decoration: none;
+}
+.blogsidebar li a:hover {
+    color: lightsteelblue;
+}
+.bbgbox {
+    width: 200;
+    height: 100%;
+    background: rgba(0,0,0, 0.5);
+
+}
+
+/* Blog Post */
+.blogpost {
+    z-index: 0;
+    flex: 1;
+    margin-top: 14vh;
+    margin-left: 14vw;
+    margin-right: 5vw;
+    padding: 20px;
+    background-image: url("./Post BG purplegreen.png");
+    opacity: .75;
+}
+.blogpost h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.blogpost p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+.blogpost aside img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
+}
+
+.blogpost .articletext{
+    background-color: none;
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+}
+
+/* Image Column */
+.imagecolumn {
+    width: 200px;
+    margin: 11vh 1vw;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.imagecolumn img {
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+.imagecolumn img:hover {
+    z-index: 1000;
+    left: 300px;
+    top: 400px;
+    margin-right: 20%;
+    border-radius: 5px;
+    transform: scale(1.85);
+}
+.bgvid{
+    position: fixed;
+    object-fit: cover;
+    margin-top: 10vh;
+    width:100%;
+    height: 100%;
+}
+.sectionselect{
+    position: relative;
+    top: 10vh;
+    margin: 10vh auto;
+}
+.sectionselect ul{
+    display: flex;
+    list-style: none;
+}
+.sectionselect ul li{
+    position: relative;
+    margin: auto;
+    padding: 20px;
+}
+.sectionselect .linkimage{
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+}
+.sectionselect .linkimage img{
+    border: 5px solid green;
+    border-radius: 30px;
+    display: block;
+    width: 300px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+.sectionselect .linkimage img:hover{
+    transform: scale(1.2);
+}
+.sectionselect .linkimage .linkimagetext :hover{
+    transform: scale(1.2);
+}
+.linkimage .linkimagetext{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: green;
+    font-size: 56px;
+    font-family: Impact;
+    text-align: center;
+    text-shadow: 2px 2px 4px black;
+
+}
+.linkimage .linkimagetext:hover{
+    color: gold;
+}
