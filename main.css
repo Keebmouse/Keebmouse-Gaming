@@ -198,9 +198,6 @@ body {
 .sectionselect .linkimage img:hover{
     transform: scale(1.2);
 }
-.sectionselect .linkimage .linkimagetext :hover{
-    transform: scale(1.2);
-}
 .linkimage .linkimagetext{
     position: absolute;
     top: 50%;
